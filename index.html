@@ -41,7 +41,7 @@
 				$( "#slider" ).slider({
 					 value:500,//500 is slider's width,
 					 min: 10,
-					 max:100, //this is the defauly max, you can remove this if needed
+					 max:100, //this is the default max, you can remove this if needed
 					slide: function( event, ui ) {
 						percent = imageWidth * ui.value/ 100;
 						$('#image').width(percent);
