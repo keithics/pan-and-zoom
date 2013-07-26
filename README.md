@@ -10,3 +10,5 @@ Jquery UI Pan and Zoom
 DEMO
 ============
 http://webninjamobile.com/clients/pan&zoom/
+
+Please wait for the image to fully load. :)
