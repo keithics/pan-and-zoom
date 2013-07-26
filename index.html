@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>Pan And Zoom Demo</title>
+		<link media="all" type="text/css" rel="stylesheet" href="css/smoothness/jquery-ui.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-ui.js"></script>
+
+		<style type="text/css">
+			#canvas{
+				width: 500px;
+				height: 500px;
+				overflow: hidden;
+				cursor: move;
+				border: red solid 5px;
+				margin:auto;
+			}
+
+			#slider{
+				margin: auto;
+				width: 500px;
+				margin-top: 40px;
+			}
+		</style>
+		 <script>
+			$(function() {
+				// get image width
+				var imageWidth = $('#image').width();
+				var percent;
+
+				$( "#image" ).draggable();
+				$( "#slider" ).slider({
+					 value:500,//500 is slider's width,
+					 min: 10,
+					 max:100, //this is the defauly max, you can remove this if needed
+					slide: function( event, ui ) {
+						percent = imageWidth * ui.value/ 100;
+						$('#image').width(percent);
+					}
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+
+		<div id="canvas">
+				<img src="sample.jpg" id="image" />
+
+		</div>
+
+		<div id="slider"></div>
+	</body>
+
+</html>
