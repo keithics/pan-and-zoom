@@ -20,11 +20,21 @@
 				width: 500px;
 				margin-top: 40px;
 			}
-		</style>
-		 <script>
+		</style>		
+	</head>
+
+	<body>
+
+		<div id="canvas">
+				<img src="sample.jpg" id="image" />
+
+		</div>
+
+		<div id="slider"></div>
+		<script>
 			$(function() {
 				// get image width
-				var imageWidth = $('#image').width();
+				var imageWidth = 2048;
 				var percent;
 
 				$( "#image" ).draggable();
@@ -39,16 +49,6 @@
 				});
 			});
 		</script>
-	</head>
-
-	<body>
-
-		<div id="canvas">
-				<img src="sample.jpg" id="image" />
-
-		</div>
-
-		<div id="slider"></div>
 	</body>
 
 </html>
