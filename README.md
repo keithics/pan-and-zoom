@@ -1,4 +1,4 @@
-Jquery UI Pan and Zoom by keithics
+Jquery UI Pan and Zoom
 ============
 
 Jquery UI Pan and Zoom
